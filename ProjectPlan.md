@@ -1,0 +1,84 @@
+## Overview
+
+The goal of this project is to analyze the relationship between sponsorship deals and team performance in Formula 1. Sponsorship is a critical aspect of Formula 1, providing teams with the financial resources needed to compete at the highest level. By integrating sponsorship and performance datasets, we aim to uncover patterns and insights that can help stakeholders understand how sponsorship impacts team success.
+
+Our objectives include:
+
+- Identifying key sponsorship deals and their financial impact on teams.
+- Analyzing team performance metrics (e.g., race results, points) in relation to sponsorship deals.
+- Creating a fully reproducible, automated data pipeline to fetch, clean, integrate, and analyze data from two distinct sources.
+- Packaging our work into a documented, shareable Python package with metadata and citation.
+
+
+## Research Questions
+
+1. What is the relationship between sponsorship deals and team performance in Formula 1?
+2. How do sponsorship deals vary by team and season?
+3. Are there specific types of sponsors that are more closely associated with better team performance?
+4. Can we build a model to predict team performance based on sponsorship data?
+
+These questions will guide our data collection and analysis efforts throughout the project.
+
+
+## Team
+
+This is a solo project with responsibilities:
+
+### Scott Abednego – Data Engineer, Data Analyst & Visualization
+- Responsible for data acquisition from sponsorship and performance APIs
+- Writing scripts for data retrieval, integrity checks, and logging
+- Conducting data profiling, cleaning, and exploratory analysis
+- Implementing visualization of sponsorship vs. performance trends
+- Structuring and documenting the reproducible package
+- Writing metadata and handling citation formats
+- Setting up and managing the GitHub repository
+
+
+## Datasets
+
+We will use two datasets from completely different sources and formats:
+
+### Dataset 1: Formula 1 Sponsorship Data
+- Source: Kaggle (Formula 1 World Championship dataset)
+- Access Method: CSV download
+- Content: Sponsorship details for Formula 1 teams, including sponsor names, deal values, and duration
+- URL: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020
+- License: Public domain
+  - Notes: Data will be accessed using a script at runtime; integrity checks via SHA256 hash
+
+### Dataset 2: Formula 1 Team Performance Data
+- Source: OpenF1 API
+- Access Method: API (JSON format)
+- Content: Historical race results, points, and performance metrics for Formula 1 teams
+- URL: https://openf1.org
+- License: Public domain
+  - Notes: Accessed programmatically using OpenF1’s API key; performance data will be matched by team and season
+
+
+## Timeline
+
+### Week 8-9: Reproducible Package Setup
+- Set up Python package structure (src/, docs/, tests/, etc.)
+- Develop CLI script for end-to-end data pipeline
+- Write README.md with install/setup instructions
+- Add unit tests for core functions
+  - Requirements: Reproducible structure, installable package, CLI-enabled
+
+### Week 10-11: Workflow Automation
+- Create Makefile and CLI wrapper for automated steps: download → clean → merge → analyze
+- Add logging and error handling for reproducibility
+- Test automation in a clean environment
+- Refactor scripts based on test results
+  - Requirements: End-to-end automation with robust testing
+
+### Week 12: Metadata & Citations
+- Create CITATION.md citing Kaggle, OpenF1, and key Python packages
+- Add licensing files to GitHub
+- Draft dataset metadata (YAML or JSON) including source, time range, units, fields
+  - Requirements: Clear citations, licensing, metadata for data provenance
+
+### Week 13-15: Final Archiving
+- Archive final project using GitHub-Zenodo integration
+- Add DOI and citation info to README.md and documentation
+  - Requirements: Long-term archiving with persistent identifier (e.g., Zenodo DOI)
+
