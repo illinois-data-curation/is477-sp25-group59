@@ -1,21 +1,21 @@
 ## Overview
 
-The goal of this project is to analyze the relationship between sponsorship deals and team performance in Formula 1. Sponsorship is a critical aspect of Formula 1, providing teams with the financial resources needed to compete at the highest level. By integrating sponsorship and performance datasets, we aim to uncover patterns and insights that can help stakeholders understand how sponsorship impacts team success.
+The goal of this project is to analyze the evolution of lap times across different circuits in Formula 1. By integrating lap times and race circuit datasets, we aim to uncover patterns and insights that can help stakeholders understand how lap times have changed over the years.
 
 Our objectives include:
 
-- Identifying key sponsorship deals and their financial impact on teams.
-- Analyzing team performance metrics (e.g., race results, points) in relation to sponsorship deals.
+- Identifying key trends in lap times across different circuits and seasons.
+- Analyzing factors that may influence lap times, such as technological advancements and changes in regulations.
 - Creating a fully reproducible, automated data pipeline to fetch, clean, integrate, and analyze data from two distinct sources.
 - Packaging our work into a documented, shareable Python package with metadata and citation.
 
 
 ## Research Questions
 
-1. What is the relationship between sponsorship deals and team performance in Formula 1?
-2. How do sponsorship deals vary by team and season?
-3. Are there specific types of sponsors that are more closely associated with better team performance?
-4. Can we build a model to predict team performance based on sponsorship data?
+1. How have lap times evolved over the years across different circuits?
+2. Are there specific circuits where lap times have improved significantly?
+3. What factors contribute to changes in lap times over the years?
+4. Can we build a model to predict lap times based on historical data?
 
 These questions will guide our data collection and analysis efforts throughout the project.
 
@@ -41,7 +41,7 @@ We will use two datasets from completely different sources and formats:
 ### Dataset 1: Formula 1 Sponsorship Data
 - Source: Kaggle (Formula 1 World Championship dataset)
 - Access Method: CSV download
-- Content: Sponsorship details for Formula 1 teams, including sponsor names, deal values, and duration
+- Content:  Lap times and race circuit details for Formula 1 teams
 - URL: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020
 - License: Public domain
   - Notes: Data will be accessed using a script at runtime; integrity checks via SHA256 hash
