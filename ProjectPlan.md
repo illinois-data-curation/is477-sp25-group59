@@ -46,7 +46,7 @@ We will use two datasets from completely different sources and formats:
 - License: Public domain
   - Notes: Data will be accessed using a script at runtime; integrity checks via SHA256 hash
 
-### Dataset 2: Formula 1 Team Performance Data
+### Dataset 2: Formula 1 Weather Data
 - Source: Kaggle (F1 Weather dataset)
 - Access Method: CSV download
 - Content: Historical race weather data for each round
