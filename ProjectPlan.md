@@ -38,7 +38,7 @@ This is a solo project with responsibilities:
 
 We will use two datasets from completely different sources and formats:
 
-### Dataset 1: Formula 1 Sponsorship Data
+### Dataset 1: Formula 1 Lap Time Data
 - Source: Kaggle (Formula 1 World Championship dataset)
 - Access Method: CSV download
 - Content:  Lap times and race circuit details for Formula 1 teams
