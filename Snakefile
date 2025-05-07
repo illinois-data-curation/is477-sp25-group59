@@ -15,15 +15,41 @@ rule all:
 
 rule download_data:
     output:
-        "data/formula-1-world-championship-1950-2020.zip",
-        "data/f1-weather-dataset-2018-2023.zip"
+        "data/circuits.csv",
+        "data/constructor_results.csv",
+        "data/constructor_standings.csv",
+        "data/constructors.csv",
+        "data/driver_standings.csv",
+        "data/drivers.csv",
+        "data/lap_times.csv",
+        "data/pit_stops.csv",
+        "data/qualifying.csv",
+        "data/races.csv",
+        "data/results.csv",
+        "data/seasons.csv",
+        "data/sprint_results.csv",
+        "data/status.csv",
+        "data/f1-weather-dataset-2018-2023.csv"
     script:
         "src/download_data.py"
 
 rule clean_data:
     input:
-        "data/formula-1-world-championship-1950-2020.zip",
-        "data/f1-weather-dataset-2018-2023.zip"
+        "data/circuits.csv",
+        "data/constructor_results.csv",
+        "data/constructor_standings.csv",
+        "data/constructors.csv",
+        "data/driver_standings.csv",
+        "data/drivers.csv",
+        "data/lap_times.csv",
+        "data/pit_stops.csv",
+        "data/qualifying.csv",
+        "data/races.csv",
+        "data/results.csv",
+        "data/seasons.csv",
+        "data/sprint_results.csv",
+        "data/status.csv",
+        "data/f1-weather-dataset-2018-2023.csv"
     output:
         "data/clean_circuits.csv",
         "data/clean_lap_times.csv",

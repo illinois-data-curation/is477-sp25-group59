@@ -10,7 +10,7 @@ def clean_data():
 
     # Rename the weather dataset
     data_folder = 'data'
-    old_weather_filename = 'F1 Weather(2023-2018).csv'
+    old_weather_filename = 'f1-weather-dataset-2018-2023.csv'
     new_weather_filename = 'weather.csv'
     old_weather_filepath = os.path.join(data_folder, old_weather_filename)
     new_weather_filepath = os.path.join(data_folder, new_weather_filename)

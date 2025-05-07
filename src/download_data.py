@@ -55,7 +55,7 @@ def download_data():
 
         if not os.path.exists('data'):
             os.makedirs('data')
-        weather.to_csv('data/F1_Weather_2018-2023.csv', encoding='utf-8', index=False)
+        weather.to_csv('data/f1-weather-dataset-2018-2023.csv', encoding='utf-8', index=False)
 
         logging.info("Weather data for Formula 1 races in 2018-2023 has been saved to 'data/F1_Weather_2018-2023.csv'")
 
@@ -66,6 +66,15 @@ def download_data():
         # Downloading weather data from Kaggle as a fallback
         kaggle.api.dataset_download_files('quantumkaze/f1-weather-dataset-2018-2023', path='data', unzip=True)
         logging.info("Downloaded weather data from Kaggle.")
+
+
+        # Rename the downloaded file to match the expected output
+        downloaded_file = 'data/F1 Weather(2023-2018).csv'
+        expected_file = 'data/f1-weather-dataset-2018-2023.csv'
+        if os.path.exists(downloaded_file):
+            os.rename(downloaded_file, expected_file)
+            logging.info(f"Renamed {downloaded_file} to {expected_file}")
+
 
 if __name__ == "__main__":
     download_data()
