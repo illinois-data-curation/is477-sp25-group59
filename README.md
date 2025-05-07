@@ -11,6 +11,9 @@ This project aims to analyze the relationship between sponsorship deals and team
    ```
 
 
+2. Kaggle setup steps:
+
+
 ### Next Steps
 - Start by setting up the directory structure and initializing the Git repository.
 - Begin writing the pipeline script and implementing the CLI functionality.

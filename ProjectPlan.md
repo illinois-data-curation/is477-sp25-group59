@@ -47,12 +47,12 @@ We will use two datasets from completely different sources and formats:
   - Notes: Data will be accessed using a script at runtime; integrity checks via SHA256 hash
 
 ### Dataset 2: Formula 1 Team Performance Data
-- Source: OpenF1 API
-- Access Method: API (JSON format)
-- Content: Historical race results, points, and performance metrics for Formula 1 teams
-- URL: https://openf1.org
+- Source: Kaggle (F1 Weather dataset)
+- Access Method: CSV download
+- Content: Historical race weather data for each round
+- URL: https://www.kaggle.com/datasets/quantumkaze/f1-weather-dataset-2018-2023
 - License: Public domain
-  - Notes: Accessed programmatically using OpenF1’s API key; performance data will be matched by team and season
+  - Notes: Data will be accessed using a script at runtime; integrity checks via SHA256 hash
 
 
 ## Timeline
