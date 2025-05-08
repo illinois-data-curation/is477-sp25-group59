@@ -1,0 +1,23 @@
+{
+    "title": "Formula 1 Lap Times Evolution Analysis",
+    "description": "An analysis of Formula 1 lap times and weather conditions from 2018 to 2023.",
+    "authors": [
+      {
+        "name": "Scott Abednego",
+        "role": "Data Collection and Cleaning, Data Analysis and Visualization, Workflow Automation and Documentation"
+      }
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "dependencies": [
+      "pandas",
+      "matplotlib",
+      "seaborn",
+      "fastf1",
+      "snakemake",
+      "requests",
+      "scikit-learn",
+      "kaggle"
+    ]
+  }
+  
